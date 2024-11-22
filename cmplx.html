@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Form</title>
+    <link rel="icon" href="e7690490-7039-4ff5-946e-986a9a5d73f9 1.png" type="image/png" >
+    
+</head>
+<body>
+    <h1>Customer's feedback form</h1>
+    <form action="cmplx.php" method="post">
+        <h3>Personal info</h3>
+Full Names <br>
+<input type="text" id="uname" name="uname" placeholder="Enter your Full Names" maxlength="50" required><br>
+Date of birth <br>
+<input type="date" name="date" id="date" required><br>
+Email <br>
+<input type="email" id="email" name="email" placeholder="E-mail" required><br>
+Password <br>
+<input type="password" id="pass" name="pass" placeholder="Password" required><br>
+Telephone <br>
+<input type="tel" name="tel" placeholder="+250 *** *** ***" required><br>
+Gender:
+Male<input type="radio" value="Male" name="gender" required>
+Female<input type="radio"value="Female" name="gender" required><br>
+<h3>User experience</h3> 
+<strong>Check all areas which you have explored</strong>  <br>
+<div class="areas" aria-required="true">
+<input type="checkbox" value="Combinatorics" id="Combinatorics" name="area[]" ><label for="Combinatorics">Combinatorics</label><br>
+<input type="checkbox" value="Algebra" id="Algebra" name="area[]" ><label for="Algebra">Algebra</label><br>
+<input type="checkbox" value="Geometry" id="Geometry" name="area[]" ><label for="Geometry">Geometry</label><br>
+<input type="checkbox" vallue="Number Theory" id="Number Theory" name="area[]" ><label for="Number Theory">Number Theory</label><br><br>
+</div>
+<b>Choose your country</b><br>
+<select name="country"  required>
+    <option value="Rwanda">Rwanda</option>
+    <option value="USA">USA</option>
+    <option value="France">France</option>
+    <option value="England">England</option>
+    <option value="Russia">Russia</option>
+    <option value="China">China</option>
+    <option value="Other">Other</option>
+</select>
+<h3>How satisfied are you with our services?</h3>
+<input type="radio" value="Very satisfied" name="satis" required>Very satisfied <br>
+<input type="radio" value="Satisfied" name="satis" required>Satisfied <br>
+<input type="radio" value="Didn't care" name="satis" required>Didn't care <br>
+<input type="radio" value="Dissatisfied" name="satis" required>Dissatisfied <br>
+<input type="radio" value="Very dissatisfied" name="satis" required>Very dissatisfied <br>
+<h3>Rate our services</h3>
+<input type="range" name="range"><br>
+<!-- Other comments: <br><textarea id="comments" name="comments" cols="30" rows="3"></textarea><br>
+<label for="photo"><b>Upload a bio photo</b></label> <br><input type="file" name="photo" id="photo" value=""><br><br> -->
+<input type="submit" name="submit" id="submit" >
+    </form>
+</body>
+</html>
